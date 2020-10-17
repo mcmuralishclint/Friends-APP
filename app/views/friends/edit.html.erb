@@ -2,5 +2,6 @@
 
 <%= render 'form', friend: @friend %>
 <hr><br>
-<%= link_to 'Show', @friend, class: "btn btn-outline-dark" %> -
+<%= link_to 'Show', @friend, class: "btn btn-outline-dark" %>
+<%= link_to 'Destroy', @friend, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-outline-danger" %>
 <%= link_to 'Back', friends_path, class: "btn btn-outline-dark" %>
